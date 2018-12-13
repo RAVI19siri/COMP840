@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+	<head>
+    	<title>Black Friday Purchase Predictor</title>
+ 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">		
+  		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  	</head>
+	<body class="container">
+		<h2>
+            <div class="center"> 
+                        BLACK FRIDAY
+             <div>
+		</h2>
+		
+		 <div class="center">
+			<div class="" style="border-radius: 40px 40px 40px 40px;"> 
+				<div class="card-content container brown-text">
+					<span class="card-title red-text">Please Fill All Fields!</span>
+                    <form name="myForm" method=post action="/analysis">
+                        <div>
+                            <label for="gender">Select Gender</label>
+                            <select class="input-field col s12 browser-default" id="gender" name="gender" required="true">
+                                <option selected="true" disabled="disabled" value=""> Select one </option>
+                                <option value="Male"> Male </option>
+                                <option value="Female"> Female </option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="age">Select age group </label>
+                            <select class="input-field col s12 browser-default" id="ageRange" name="ageRange" required="true">
+                                <option selected="true" disabled="disabled" value=""> Select one </option>
+                                <option value="0-17"> 0 - 17 </option>
+                                <option value="18-24"> 18 - 25 </option>
+                                <option value="26-35"> 26 - 35 </option>
+                                <option value="36-45"> 36 - 45 </option>
+                                <option value="46-50"> 46 - 50 </option>
+                                <option value="51-55"> 51 - 55 </option>
+                                <option value="55+"> 55+ </option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="gender"> Marital status</label>
+                            <select class="input-field col s12 browser-default" id="maritalStatus" name="maritalStatus" required="true">
+                                <option selected="true" disabled="disabled" value=""> Select one </option>
+                                <option value="Married"> Married </option>
+                                <option value="Single"> Single </option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="city"> City category </label>
+                            <select class="input-field col s12 browser-default" id="cityCategory" name="cityCategory" required="true">
+                                <option selected="true" disabled="disabled" value=""> Select one </option>
+                                <option value="A"> A </option>
+                                <option value="B"> B </option>
+                                <option value="C"> C </option>
+                            </select>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <label for="noOfYears">No of years stayed in this city</label>
+                            <input type="number" name="noOfYears" id="noOfYears" required="true" />
+                        </div>
+                        <div>
+                            <button class="btn waves-effect black white-text waves-light" type="submit" name="submit_btn">Submit</button>
+                        </div>
+                    </form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

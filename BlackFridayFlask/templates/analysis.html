@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+    	<title> Black Friday Purchase Predictor</title>
+ 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">		
+  		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      	
+  	</head>
+    <body class="container">
+
+        <div id='homeButton'>
+            <form action="/">
+                <button class="btn waves-effect black white-text waves-light" type="submit" name="submit_btn" style="background-color: blue!important;">Home</button>
+            </form>
+        </div>
+
+        <div class="center" style="border-radius: 40px 40px 40px 40px;">
+            <div class="requested-details" style="margin-top: 72px; border:2px solid black">
+                <div> <span style="font-weight:bold"> Gender </span>: <span> {{gender}} </span> </div>
+                <div> <span style="font-weight:bold"> Age range </span>: <span> {{ageRange}} </span> </div>
+                <div> <span style="font-weight:bold"> Martial status </span>: <span> {{maritalStatus}} </span> </div>
+                <div> <span style="font-weight:bold"> City category </span>: <span> {{cityCategory}} </span> </div>
+                <div> <span style="font-weight:bold"> No of years </span>: <span> {{noOfYears}} </span> </div>
+            </div>
+            <div class="card result" style="font-weight: bold; font-size: 58px;" >                
+                <div> Purchase: {{result}} </div>
+            </div>
+        </div>
+    </body>
+</html>
