@@ -5,6 +5,7 @@ import pandas as pd
 import numpy as np
 
 from sklearn.ensemble import RandomForestRegressor
+from sklearn.tree import DecisionTreeRegressor
 import pickle
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
@@ -30,7 +31,7 @@ def train_classify():
 	X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
     
     
-	regr = RandomForestRegressor(max_depth=5,random_state=42,n_estimators=100)
+	regr = DecisionTreeRegressor()
 	regr.fit(X_train,y_train)
     
 	blackFriday_path = 'blackFriday.pkl'
